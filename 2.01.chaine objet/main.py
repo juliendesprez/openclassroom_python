@@ -29,6 +29,10 @@ chaine_complete = message + " " + prenom
 print(chaine_complete) # Résultat :
 
 
-presentation = "salut"
+presentation = "salut ca va"
 presentation[0:2] # On sélectionne les deux premières lettres
 presentation[2:len(presentation)] # On sélectionne la chaîne sauf les deux premières lettres
+
+# decouper une chaine à l'aide dela méthode split
+maliste = presentation.split()
+print(maliste)
