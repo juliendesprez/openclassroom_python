@@ -1,6 +1,6 @@
 import os
 
-chaine = str() # Crée une chaîne vide
+chaine = str()  # Crée une chaîne vide
 # On aurait obtenu le même résultat en tapant chaine = ""
 
 while chaine.lower() != "q":
@@ -20,13 +20,13 @@ print(nouvelle_chaine)
 
 prenom = "Paul"
 message = "Bonjour"
-chaine_complete = message + prenom # On utilise le symbole '+' pour concaténer deux chaînes
-print(chaine_complete) # Résultat :
+chaine_complete = message + prenom   # On utilise le symbole '+' pour concaténer deux chaînes
+print(chaine_complete)  # Résultat :
 
 # Pas encore parfait, il manque un espace
 # Qu'à cela ne tienne !
 chaine_complete = message + " " + prenom
-print(chaine_complete) # Résultat :
+print(chaine_complete)  # Résultat :
 
 
 presentation = "salut ca va"

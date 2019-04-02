@@ -15,7 +15,8 @@ def miser(sommePlafond):
                 raise ValueError
             return mise
         except AssertionError as montantTropGros:
-            print("Vous n'avez plus assez d'argent pour miser cette somme. \n saisissez une somme maximale de ", sommePlafond)
+            print("Vous n'avez plus assez d'argent pour miser cette somme. \n \
+                saisissez une somme maximale de ", sommePlafond)
         except ValueError:
             print("Saisissez un montant correct")
 

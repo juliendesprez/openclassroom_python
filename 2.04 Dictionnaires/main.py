@@ -34,20 +34,21 @@ def fete():
 def oiseau():
     print("Fais comme l'oiseau...")
 ...
-fonctions = {}
-fonctions["fete"] = fete # on ne met pas les parenthèses
-fonctions["oiseau"] = oiseau
-fonctions["oiseau"]() # on essaye de l'appeler
 
+
+fonctions = {}
+fonctions["fete"] = fete  # on ne met pas les parenthèses
+fonctions["oiseau"] = oiseau
+fonctions["oiseau"]()  # on essaye de l'appeler
 
 
 # Autre syntaxe d'alimentation
-placard = {"chemise":3, "pantalon":6, "tee-shirt":7}
+placard = {"chemise": 3, "pantalon": 6, "tee-shirt": 7}
 
 # suppression
-placard = {"chemise":3, "pantalon":6, "tee shirt":7}
+placard = {"chemise": 3, "pantalon": 6, "tee shirt": 7}
 del placard["chemise"]
 
 # ou 
-placard = {"chemise":3, "pantalon":6, "tee shirt":7}
+placard = {"chemise": 3, "pantalon": 6, "tee shirt": 7}
 placard.pop("chemise")
