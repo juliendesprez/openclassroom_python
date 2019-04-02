@@ -43,4 +43,3 @@ print(inventaire)
 liste_inversee = [( nb, fruit ) for fruit,nb in inventaire ]
 inventaire = [( fruit,nb ) for nb, fruit in sorted(liste_inversee, reverse = True ) ] 
 print(inventaire)
-

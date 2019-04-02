@@ -52,3 +52,42 @@ del placard["chemise"]
 # ou 
 placard = {"chemise": 3, "pantalon": 6, "tee shirt": 7}
 placard.pop("chemise")
+
+placard = {"chemise": 3, "pantalon": 6, "tee shirt": 7}
+
+# parcours du dictionnaire
+for vetement in placard:
+    print(vetement)
+
+# Juste les cles
+for cle in placard.keys():
+    print(cle)
+
+# Juste les valeurs
+for val in placard.values():
+    print(val)
+
+fruits = {"pommes":21, "melons":3, "poires":31}
+for cle, valeur in fruits.items():
+    print("La clé {} contient la valeur {}.".format(cle, valeur))
+
+inventaire = {
+    "pommes": 22,
+    "melons": 4,
+    "poires": 18,
+    "fraises": 76,
+    "prunes": 51,
+}
+
+print(inventaire)
+# On change le sens de l'inventaire, la quantité avant le nom
+liste_inversee = {  nb : fruit  for fruit,nb in inventaire.items() }
+print(liste_inversee)
+
+inventaire = {  fruit : nb  for nb, fruit in sorted(liste_inversee.items(), reverse = True ) }
+print(inventaire)
+
+# Tous les paramètres non nommés se retrouveront dans la variableen_listeet les paramètres nommés dans la variableen_dictionnaire.
+def fonction_inconnue(*en_liste, **en_dictionnaire):
+     return 1
+     
