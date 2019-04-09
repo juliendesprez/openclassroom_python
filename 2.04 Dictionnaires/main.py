@@ -81,13 +81,15 @@ inventaire = {
 
 print(inventaire)
 # On change le sens de l'inventaire, la quantité avant le nom
-liste_inversee = {  nb : fruit  for fruit,nb in inventaire.items() }
+liste_inversee = {nb: fruit for fruit, nb in inventaire.items()}
 print(liste_inversee)
 
-inventaire = {  fruit : nb  for nb, fruit in sorted(liste_inversee.items(), reverse = True ) }
+inventaire = {fruit: nb for nb, fruit in sorted(liste_inversee.items(), reverse = True)}
 print(inventaire)
 
 # Tous les paramètres non nommés se retrouveront dans la variableen_listeet les paramètres nommés dans la variableen_dictionnaire.
+
+
 def fonction_inconnue(*en_liste, **en_dictionnaire):
      return 1
      
